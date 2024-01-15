@@ -1,3 +1,5 @@
+package FinalConcept;
+
 public class FinalConcept {
     final int finalVariable=67;
     final void finalVariableMethod()
