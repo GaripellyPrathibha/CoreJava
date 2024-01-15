@@ -1,3 +1,4 @@
+package StaticConcept;
 
 public class StaticConcept{
         private static int b=2;
@@ -8,7 +9,7 @@ public class StaticConcept{
         }
 
         public static void main(String[] args) {
-            Main h=new Main();
+            StaticConcept h=new StaticConcept();
             int c=h.getVariable();
 
             System.out.println("Static variable = "+c);
