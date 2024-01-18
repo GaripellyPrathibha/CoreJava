@@ -1,4 +1,4 @@
-package FinalConcept;
+package finalConcept;
 
 final public class FinalConcept {
     final int finalVariable=67;

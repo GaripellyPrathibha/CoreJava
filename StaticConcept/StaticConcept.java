@@ -1,4 +1,4 @@
-package StaticConcept;
+package staticConcept;
 
 public class StaticConcept{
         private static int b=2;

@@ -1,3 +1,5 @@
+package abstract_concept;
+
 public class ImpDepartment extends Department{
     int departmentSize;
     public ImpDepartment(int departmentSize)

@@ -1,4 +1,4 @@
-package InstanceConcept;
+package instanceConcept;
 
 public class ChildClass extends ParentClass{
     public int cInstanceVariable;
