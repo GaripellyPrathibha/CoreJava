@@ -13,8 +13,6 @@ public class RelativeOrderArray {
             a[i] = sc.nextInt();
         }
         int z = 0;
-
-        // Traverse the array and move non-zero elements to the front
         for ( i = 0; i < n; i++) {
             if (a[i] != 0) {
                 temp = a[i];
