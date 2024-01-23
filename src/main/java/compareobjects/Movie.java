@@ -1,7 +1,10 @@
 package compareobjects;
 
-public class Movie {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
+public class Movie {
     int yearReleased;
     double rating;
     double budget;
@@ -13,22 +16,19 @@ public class Movie {
         this.budget=budget;
         this.collectionAmount=collectionAmount;
     }
-    public int compare(Movie m) {
-
-        return 0;
-    }
-
-
     public static void main(String[] args)
     {
-        Movie m1 = new Movie(2020, 8.5, 10000, 15000);
-        Movie m2 = new Movie(2022, 9.0, 20000, 25000);
+        Movie movie1 = new Movie(2023, 8.5, 80.0, 100.0);
+        Movie movie2 = new Movie(2011, 5.0,100.0, 80.0);
+        Movie movie3 = new Movie(2005, 7.0, 60.0, 200.0);
 
-        System.out.println(m1.compare(m2));
-        System.out.println(m1.compare(m2));
+        RatingAndProfitComparator ratingProfitComparator = new RatingAndProfitComparator();
+        int resultRatingProfit = ratingProfitComparator.compare(movie1, movie2);
+        System.out.println("Compare by Rating and Profit: " + resultRatingProfit);
 
-
+        YearandRatingComparator yearRatingComparator = new YearandRatingComparator();
+        int resultYearRating = yearRatingComparator.compare(movie1, movie2);
+        System.out.println("Compare by Year Released and Rating: " + resultYearRating);
     }
-
 
 }
