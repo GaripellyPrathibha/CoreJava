@@ -18,5 +18,21 @@ public class ConvertMethodTest {
         String[] expectedArr={"java","python","c++"};
         assertArrayEquals(expectedArr,stringArr);
     }
+    @Test
+    public void testConvertToArrayWithEmptyArray()
+    {
+        ArrayList<String> arr=new ArrayList<>();
+        String[] stringArr=ConvertMethod.convertToArray(arr);
+        String[] expectedArr={};
+        assertArrayEquals(expectedArr,stringArr);
+    }
+    @Test
+    public void testConvertToArrayWithNullArray(){
+        ArrayList<String> arr=null;
+        String[] stringArr=ConvertMethod.convertToArray(arr);
+        assertArrayEquals(null,stringArr);
+
+
+    }
 
 }

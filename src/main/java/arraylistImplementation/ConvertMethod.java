@@ -7,13 +7,17 @@ import java.util.Scanner;
 public class ConvertMethod {
     public static String[] convertToArray(ArrayList<String> arr)
     {
+        if(arr==null)
+        {
+            return null;
+        }
         String[] a=new String[arr.size()];
         a= arr.toArray(a);
         return a;
     }
     public static void main(String[] args)
     {
-        ArrayList<String> arr=new ArrayList<>();
+        /*ArrayList<String> arr=new ArrayList<>();
         Scanner sc=new Scanner(System.in);
         while(true)
         {
@@ -28,7 +32,7 @@ public class ConvertMethod {
         for (String s:stringArr)
         {
             System.out.println(s);
-        }
+        }*/
     }
 
 
