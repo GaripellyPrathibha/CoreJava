@@ -17,24 +17,6 @@ public class ConvertMethod {
     }
     public static void main(String[] args)
     {
-        /*ArrayList<String> arr=new ArrayList<>();
-        Scanner sc=new Scanner(System.in);
-        while(true)
-        {
-            String str=sc.nextLine();
-            if(str.equalsIgnoreCase("exit"))
-            {
-                break;
-            }
-            arr.add(str);
-        }
-        String[] stringArr=convertToArray(arr);
-        for (String s:stringArr)
-        {
-            System.out.println(s);
-        }*/
+
     }
-
-
-
 }
