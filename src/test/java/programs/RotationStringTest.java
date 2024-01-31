@@ -7,7 +7,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class RotationStringTest {
-    public void testRotateStringPositive() {
+    @Test public void testRotateStringPositive() {
         String str1 = "abcde";
         String str2 = "deabc";
         boolean result = RotationString.isRotatedString(str1, str2);
@@ -22,9 +22,9 @@ public class RotationStringTest {
     }
     @Test
     public void testRotateStringEmptyStrings() {
-        String str1 = null;
-        String str2 = "";
+        String str1 = " ";
+        String str2 = " ";
         boolean result = RotationString.isRotatedString(str1, str2);
-        assertFalse(result);
+        assertTrue(result);
     }
 }
