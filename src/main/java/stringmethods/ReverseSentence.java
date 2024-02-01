@@ -15,16 +15,7 @@ public class ReverseSentence {
         return reversedSentence.toString().trim();
     }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter a sentence:");
-        String sentence = sc.nextLine();
-
-        String reversedSentence = reverseSentence(sentence);
-
-        System.out.println("Reversed sentence: " + reversedSentence);
-    }
 }
 
 
