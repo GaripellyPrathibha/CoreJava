@@ -8,16 +8,16 @@ public class UniqueHashMapTest {
     @Test
     public void testUniqueString()
     {
-        String input="Prathibha";
+        String input="hello Prathibha";
         int result=UniqueHashMap.printUniqueCount(input);
-        assertEquals(5,result);
+        assertEquals(2,result);
     }
     @Test
     public void testDuplicateString()
     {
-        String input="Prathib";
+        String input="hello hello hello";
         int result=UniqueHashMap.printUniqueCount(input);
-        assertEquals(7,result);
+        assertEquals(0,result);
 
     }
     @Test
