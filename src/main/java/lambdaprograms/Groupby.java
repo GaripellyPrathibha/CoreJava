@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Groupby {
-    public Map<Integer, List<String>> groupingStringsByLentgh(List<String> str)
+    public static Map<Integer, List<String>> groupingStringsByLentgh(List<String> str)
     {
         return str.stream().collect(Collectors.groupingBy(String::length));
     }
