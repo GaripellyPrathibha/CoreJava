@@ -6,14 +6,14 @@ public class DeadlockExample {
         Thread t1 = new Thread() {
             public void run() {
                 synchronized (resource1) {
-                    System.out.println("Thread 1: locked resource 1");
+                    System.out.println("Thread 1: locking resource 1");
                     try {
                         Thread.sleep(100);
                     }
                     catch (Exception e)
                     {}
                     synchronized (resource2) {
-                        System.out.println("Thread 1: locked resource 2");
+                        System.out.println("Thread 1: locking resource 2");
                     }
                 }
             }
@@ -21,7 +21,7 @@ public class DeadlockExample {
         Thread t2 = new Thread() {
             public void run() {
                 synchronized (resource2) {
-                    System.out.println("Thread 2: locked resource 2");
+                    System.out.println("Thread 2: locking resource 2");
                     try
                     {
                         Thread.sleep(100);
@@ -29,7 +29,7 @@ public class DeadlockExample {
                     catch (Exception e)
                     {}
                     synchronized (resource1) {
-                        System.out.println("Thread 2: locked resource 1");
+                        System.out.println("Thread 2: locking resource 1");
                     }
                 }
             }
