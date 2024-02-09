@@ -3,9 +3,6 @@ package hashmapImplementation;
 import java.util.HashMap;
 
 public class DistinctHashMap {
-    public static void main(String[] args) {
-
-    }
     public static void printCharacterCounts(String str) {
         HashMap<Character, Integer> charMap = new HashMap<>();
         for (char c : str.toCharArray()) {
